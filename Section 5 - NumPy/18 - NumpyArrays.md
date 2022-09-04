@@ -43,7 +43,7 @@ linear_space = np.linspace(0,5,10)
 
 Random arrays can be generated from 0 to 1, around a Normal Distribution (With 0 as the centre) and between a range of integers.
 
-*NOTE:* Unlike the previous section, no tuples are required to create a 2D matrix using these methods. All end integers are exclusive
+**NOTE:** Unlike the previous section, no tuples are required to create a 2D matrix using these methods. All end integers are exclusive
 
 Random between 0 and 1
 
@@ -95,7 +95,7 @@ min_int_loc = arr.argmin()
 Shape: The shape of the matrix/array (1x4, 2x2, 3x5)
 DType: Short for Data Type, it returns the data type of the elements inside the array
 
-*NOTE:* These are properties and do not need a set of parenthesis at the back
+**NOTE:** These are properties and do not need a set of parenthesis at the back
 
 ```py
 arr_shape = arr.shape

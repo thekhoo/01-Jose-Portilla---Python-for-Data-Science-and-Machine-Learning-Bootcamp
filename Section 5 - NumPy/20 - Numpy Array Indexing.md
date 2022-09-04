@@ -6,6 +6,7 @@ Works similar to a normal python array. Using square brackets `my_list[idx]` the
 
 ```py
 arr = np.arange(0,11,1)
+
 arr[8]      # Grab at Index 8
 arr[2:5]    # Grab from Index 2 to 4
 arr[1:]     # Grab everything after Index 1 (Starts at Index 2)
@@ -52,7 +53,7 @@ item = arr_2d[2][1]
 
 #### Single Bracket Format
 
-*RECOMMENDED METHOD*
+**RECOMMENDED METHOD**
 
 Similar to the Double Bracket Method, instead of having two square brackets, commas can be used to separate rows and columns.
 
@@ -62,5 +63,52 @@ arr_2d = np.array([[5,10,15],[20,25,30],[35,40,45]])
 # Grabbing the item 40
 item = arr_2d[2,1]
 ```
+
+## Slicing an Array (2D)
+
+Similar to how a 1D Array is sliced. 
+
+*The following example grabs the first and second rows (Index 0 and 1)*
+
+```py
+arr_2d = np.array([[5,10,15],[20,25,30],[35,40,45]])
+
+sliced_arr = arr_2d[:2]
+```
+
+*The following example grabs the first and second rows (Index 0 and 1), and in both these rows, columns 1 to end*
+
+```py
+arr_2d = np.array([[5,10,15],[20,25,30],[35,40,45]])
+
+sliced_arr = arr_2d[:2,1:]
+```
+
+## Comparing Arrays
+
+Different arrays can be compared to get boolean arrays.
+
+*The following example returns a boolean array where elements less than or equal to 5 will be False while the rest will be True*
+
+```py
+ arr = np.arange(1,11)
+
+ # Boolean Comparison
+ bool_arr = arr > 5
+```
+
+## Conditional Selection
+
+The boolean array can be passed into square brackets to get results where the boolean array is True.
+```py
+ arr = np.arange(1,11)
+
+ # Boolean Comparison
+ bool_arr = arr > 5
+
+ # Conditional Selection
+ result_arr = arr[bool_arr]
+```
+
 
 
