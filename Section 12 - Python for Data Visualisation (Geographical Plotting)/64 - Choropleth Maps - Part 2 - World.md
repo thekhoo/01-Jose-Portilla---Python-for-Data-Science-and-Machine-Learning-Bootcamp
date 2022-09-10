@@ -12,6 +12,7 @@ df = pd.read_csv('data/2014_World_GDP')
 
 data = dict(
     type            = 'choropleth',
+    locationmode    = 'country names'
     locations       = df['CODE'],
     z               = df['GDP (BILLIONS)'],
     text            = df['COUNTRY'],
